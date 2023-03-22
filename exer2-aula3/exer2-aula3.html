@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+            margin: auto;
+            padding: auto;
+        }
+        input{
+            margin-bottom: 3%;
+        }
+        button{
+            margin:10px;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        div{
+            display: block;
+        }
+        section{
+            text-align: center;
+        }
+        #resultado{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Preencha o formulário</h1>
+        <label for="marca-carro">Marca do carro: </label>
+        <input type="text" name="marca-carro" id="marca-carro" required><br>
+        <label for="modelo-carro">Modelo do carro:</label>
+        <input type="text" name="modelo-carro" id="modelo-carro" required><br>
+        <label for="cor-carro">Cor do carro: </label>
+        <input type="text" name="cor-carro" id="cor-carro" required><br>
+        <label for="ano-carro">Ano do carro: </label>
+        <input type="number" name="ano-carro" id="ano-carro" required><br>
+        <label for="kilometragem-carro">kilometragem do carro:</label>
+        <input type="number" name="kilometragem-carro" id="kilometragem-carro" required><br>
+        <label for="valor-fipe">Valor fipe:</label>
+        <input type="number" name="valor-fipe" id="valor-fipe" required><br>
+        <button type="button" onclick="salvarCarro()">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <hr>
+    <div id="resultado">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
