@@ -58,7 +58,7 @@ function Carro() {
         let valor_mercado;
         if (km_ano <= 30000) {
             valor_mercado = this.valor_fipe * 1.1;
-        } else if (km_por_ano > 30000 && km_por_ano <= 50000) {
+        } else if (km_ano > 30000 && km_ano <= 50000) {
             valor_mercado = this.valor_fipe;
         } else {
             valor_mercado = this.valor_fipe * 0.9;
