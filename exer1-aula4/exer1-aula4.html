@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1><br>
+    <form>
+        <br>
+        <label for="campo-nome">Nome:</label>
+        <input type="text" name="campo-nome" id="campo-nome"><br>
+        <label for="campo-email">Email:</label>
+        <input type="email" name="campo-email" id="campo-email"><br>
+        <label for="campo-data">Data de nascimento:</label>
+        <input type="date" name="campo-data" id="campo-data"><br>
+        <label for="campo-telefone-celular">Telefone celular:</label>
+        <input type="tel" name="campo-telefone-celular" id="campo-telefone-celular"><br>
+        <label for="campo-telefone-fixo">Telefone fixo:</label>
+        <input type="tel" name="campo-telefone-fixo" id="campo-telefone-fixo"><br>
+        <label for="professor">professor</label>
+        <input type="radio" name="campo-radio" id="professor" onchange="apresentarProfessorInfo()">
+        <label for="aluno">Aluno</label>
+        <input type="radio" name="campo-radio" id="aluno" onchange="apresentarAlunoInfo()">
+        <div style="display: none;" id="div-professor">
+            <br>
+            <label for="campo-area-atuacao">Área de atuação:</label>
+            <input type="text" id="campo-area-atuacao" name="campo-area-atuacao"><br>
+            <label for="campo-matricula-professor">Matrícula:</label>
+            <input type="number" name="campo-matricula-professor" id="campo-matricula-professor"><br>
+            <label for="campo-lattes">Lattes:</label>
+            <input type="url" name="campo-lattes" id="campo-lattes">
+        </div>
+        <div style="display: none;" id="div-aluno">
+            <br>
+            <label for="campo-nome-curso">Nome do curso:</label>
+            <input type="text" name="campo-nome-curso" id="campo-nome-curso"><br>
+            <label for="campo-matricula-aluno">Matrícula:</label>
+            <input type="number" name="campo-matricula-aluno" id="campo-matricula-aluno">
+        </div>
+        <hr>
+        <button type="button" onclick="Salvar()">Enviar</button>
+        <button type="reset" onclick="Limpar()">Limpar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
